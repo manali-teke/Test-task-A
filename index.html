@@ -12,22 +12,29 @@
     <form id="profile-form" novalidate>
       <label for="name">Display name</label>
       <input id="name" autocomplete="name">
+      <p class="error" id="name-error"></p>
 
       <label for="email">Email</label>
       <input id="email" type="email" autocomplete="email">
+      <p class="error" id="email-error"></p>
 
       <label for="age">Age (optional)</label>
       <input id="age" inputmode="numeric">
+      <p class="error" id="age-error"></p>
 
       <label for="pronouns">Pronouns (optional)</label>
       <input id="pronouns">
+      <p class="error" id="pronouns-error"></p>
 
       <label for="bio">Bio (optional)</label>
       <textarea id="bio" rows="4"></textarea>
+      <p class="counter" id="bio-counter">0/160</p>
+      <p class="error" id="bio-error"></p>
 
       <button type="submit">Save profile</button>
     </form>
     <p id="status" role="status"></p>
+    <section id="preview" hidden></section>
   </main>
   <script src="profile.js"></script>
 </body>
